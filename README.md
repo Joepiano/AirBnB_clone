@@ -1,7 +1,53 @@
 README.md
 ![hbnb_logo](https://user-images.githubusercontent.com/99508912/189758710-90bf3d75-de52-4ec1-a712-276520e760d4.png)
 
+Description 🏠
 AirBnB Clone - The Console The console is the first segment of the AirBnB project at Holberton School that will collectively cover fundamental concepts of higher level programming. The goal of AirBnB project is to eventually deploy our server a simple copy of the AirBnB Website(HBnB). A command interpreter is created in this segment to manage objects for the AirBnB(HBnB) website.
+
+The project currently only implements the back-end console.
+
+Classes 🆑
+
+
+
+Storage 🛄
+The above classes are handled by the abstracted storage engine defined in the FileStorage class.
+
+Every time the backend is initialized, HolbertonBnB instantiates an instance of FileStorage called storage. The storage object is loaded/re-loaded from any class instances stored in the JSON file file.json. As class instances are created, updated, or deleted, the storage object is used to register corresponding changes in the file.json.
+
+Console 💻
+The console is a command line interpreter that permits management of the backend of HolbertonBnB. It can be used to handle and manipulate all classes utilized by the application (achieved by calls on the storage object defined above).
+
+Using the Console
+The HolbertonBnB console can be run both interactively and non-interactively. To run the console in non-interactive mode, pipe any command(s) into an execution of the file console.py at the command line.
+
+$ echo "help" | ./console.py
+(hbnb) 
+Documented commands (type help <topic>):
+========================================
+EOF  all  count  create  destroy  help  quit  show  update
+
+(hbnb) 
+$
+Alternatively, to use the HolbertonBnB console in interactive mode, run the file console.py by itself:
+
+$ ./console.py
+While running in interactive mode, the console displays a prompt for input:
+
+$ ./console.py
+(hbnb) 
+To quit the console, enter the command quit, or input an EOF signal (ctrl-D).
+
+$ ./console.py
+(hbnb) quit
+$
+$ ./console.py
+(hbnb) EOF
+$
+
+
+
+
 
 Functionalities of this command interpreter: Create a new object (ex: a new User or a new Place) Retrieve an object from a file, a database etc... Do operations on objects (count, compute stats, etc..t Table of Content Environment Installation File D.) Update attributes of an object Destroy an objecescriptions Usage Examples of use Bugs Authors License Environment This project is interpreted/tested on Ubuntu 14.04 LTS using python3 (version 3.4.3)
 
